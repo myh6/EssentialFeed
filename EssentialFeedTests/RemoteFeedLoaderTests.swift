@@ -52,7 +52,6 @@ class RemoteFeedLoaderTexts: XCTestCase {
         var capturedError = [RemoteFeedLoader.Error]()
         sut.load { capturedError.append($0) }
         
-        let clientError = NSError(domain: "Test", code: 0)
         client.complete(withStatusCode: 400)
         
         XCTAssertEqual(capturedError, [.invalidData])
