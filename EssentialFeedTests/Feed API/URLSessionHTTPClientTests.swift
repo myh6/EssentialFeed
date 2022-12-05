@@ -32,16 +32,6 @@ class URLSessionHTTPClientTests: XCTestCase {
     private class URLSessionSpy: URLSession {
         var receivedURLs = [URL]()
         
-        // Must call a designated initializer of the superclass 'URLSession'
-//        override init() {
-//            super.init(configuration: .default)
-//        }
-        
-        // Initializer does not override a designated initializer from its superclass
-//        override init(configuration: URLSessionConfiguration, delegate: URLSessionDelegate?, delegateQueue queue: OperationQueue?) {
-//            super.init(configuration: .default)
-//        }
-        
         override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
             receivedURLs.append(url)
             return FakeURLSessionDataTask()
