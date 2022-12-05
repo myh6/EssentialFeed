@@ -75,13 +75,6 @@ class URLSessionHTTPClientTests: XCTestCase {
         return sut
     }
     
-    private func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString, line: UInt) {
-        // Run after each test finishes
-        addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, "Instance should have ben deallocate. Potential memory leak.", file: file, line: line)
-        }
-    }
-    
     private class URLProtocolStub: URLProtocol {
         private static var stubs: Stub?
         private static var requestedObserver: ((URLRequest) -> Void)?
