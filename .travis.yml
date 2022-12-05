@@ -1,4 +1,4 @@
 os: osx
 osx_image: xcode14.0
 language: swift
-script: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGN_REQUIRED=NO
+script: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme "CI" CODE_SIGN_IDENTITY="" CODE_SIGN_REQUIRED=NO -sdk iphonesimulator -destiation "platform=iOS Simulator,name=iPhone12,OS=14.3"
