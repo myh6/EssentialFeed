@@ -28,13 +28,13 @@ class URLSessionHTTPClient {
 
 class URLSessionHTTPClientTests: XCTestCase {
     
-    override class func setUp() {
+    override func setUp() {
         super.setUp()
         
         URLProtocolStub.startInterceptingRequest()
     }
     
-    override class func tearDown() {
+    override func tearDown() {
         super.tearDown()
         
         URLProtocolStub.stopInterceptingRequest()
@@ -118,7 +118,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         return NSError(domain: "any error", code: 0)
     }
     
-    private func anyHTTPURLResponse() -> URLResponse {
+    private func anyHTTPURLResponse() -> HTTPURLResponse {
         return HTTPURLResponse(url: anyURL(), statusCode: 200, httpVersion: nil, headerFields: nil)!
     }
     
