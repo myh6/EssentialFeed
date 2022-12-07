@@ -37,6 +37,7 @@ class FeedStore {
     }
     
     private var deletionCompletion = [DeletionCompletion]()
+    
     func deleteCacheFeed(completion: @escaping DeletionCompletion) {
         deletionCompletion.append(completion)
         receivedMessage.append(.deleteCachedFeed)
