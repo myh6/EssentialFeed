@@ -126,7 +126,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         XCTAssertEqual(receivedError as NSError?, deletionError)
     }
     
-    func test_save_failsOnInsertionDeletionError() {
+    func test_save_failsOnInsertionError() {
         let items = [uniqueItem(), uniqueItem()]
         let (sut, store) = makeSUT()
         let insertionError = anyNSError()
