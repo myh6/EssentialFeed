@@ -92,7 +92,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
         XCTAssertEqual(store.receivedMessage, [.retrieve])
     }
     
-    func test_load_doesNotdeletesCacheOnLessThanSevenDaysOldCache() {
+    func test_load_hasNoSideEffectOnLessThanSevenDaysOldCache() {
         let feed = uniqueImageFeed()
         let fixedCurrentDate = Date()
         let lessThanSevenDaysOldTimeStamp = fixedCurrentDate.adding(days: -7).adding(seconds: 1)
