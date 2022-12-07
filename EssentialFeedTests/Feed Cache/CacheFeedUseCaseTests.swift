@@ -137,6 +137,7 @@ class CacheFeedUseCaseTests: XCTestCase {
             receivedError = error
             exp.fulfill()
         }
+        
         store.completeDeletionSuccessfully()
         store.completeInsertion(with: insertionError)
         wait(for: [exp], timeout: 1.0)
