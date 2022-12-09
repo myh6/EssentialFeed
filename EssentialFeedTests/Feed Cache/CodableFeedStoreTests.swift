@@ -105,18 +105,14 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStore {
         let noDeletePremissionURL = cachesDirectory()
         let sut = makeSUT(storeURL: noDeletePremissionURL)
         
-        let deletionError = deleteCache(from: sut)
-        
-        XCTAssertNotNil(deletionError, "Expected cache deletion to fail with an error")
+        assertThatDeleteDeliversErrorOnDeletionError(on: sut)
     }
     
     func test_delete_hasNoSideEffectOnDeletionError() {
         let noDeletePremissionURL = cachesDirectory()
         let sut = makeSUT(storeURL: noDeletePremissionURL)
         
-        deleteCache(from: sut)
-        
-        expect(sut, toRetrieve: .empty)
+        assertThatDeleteHasNoSideEffectOnDeletionError(on: sut)
     }
     
     func test_storeeSideEffects_runSerially() {
