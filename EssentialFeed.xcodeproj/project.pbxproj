@@ -168,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				0F9C776429431EDF000C280F /* FeedStoreSpecs.swift */,
-				0F9C776D29432D08000C280F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */,
 				0F9C776729432045000C280F /* XCTestCase+FeedStoreSpecs.swift */,
+				0F9C776D29432D08000C280F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */,
 				0F9C7769294329AB000C280F /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */,
 				0F9C776B29432A44000C280F /* XCTestCase+FailableInsertFeedStoreSpecs.swift */,
 			);
