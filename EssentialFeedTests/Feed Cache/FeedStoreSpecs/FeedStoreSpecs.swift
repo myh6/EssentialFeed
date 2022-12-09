@@ -15,7 +15,7 @@ protocol FeedStoreSpecs {
     
     func test_insert_overridesPreiouslyInsertedCacheValues()
     
-    func test_storeeSideEffects_runSerially()
+    func test_storeSideEffects_runSerially()
 }
 
 protocol FailableRetrieveFeedStoreSpecs: FeedStoreSpecs {
