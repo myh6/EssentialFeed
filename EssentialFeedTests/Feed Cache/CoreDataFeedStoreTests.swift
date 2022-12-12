@@ -51,9 +51,13 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
         
         assertThatInsertOverridesPreiouslyInsertedCacheValues(on: sut)
     }
+    
     func test_delete_deliversNoErrorOnEmptyCache() {
+        let sut = makeSUT()
         
+        assertThatDeleteDeliversNoErrorOnEmptyCache(on: sut)
     }
+    
     func test_delete_emptiesPreviouslyInsertedCache() {
         
     }
