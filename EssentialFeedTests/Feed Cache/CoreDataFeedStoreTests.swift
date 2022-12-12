@@ -51,12 +51,18 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
         
         assertThatInsertOverridesPreiouslyInsertedCacheValues(on: sut)
     }
-    
-    func test_retrieve_deliversFailureOnRetrievalError() {}
-    func test_retrieve_hasNoSideEffectsOnFailure() {}
-    func test_insert_deliversErrorOnInsertionError() {}
-    func test_insert_hasNoSideEffectOnInsertionError() {}
-    
+    func test_delete_deliversNoErrorOnEmptyCache() {
+        
+    }
+    func test_delete_emptiesPreviouslyInsertedCache() {
+        
+    }
+    func test_delete_hasNoSideEffectsOnEmptyCache() {
+        
+    }
+    func test_delete_deliversNoErrorOnNonEmptyCache() {
+        
+    }
     func test_delete_deliversErrorOnDeletionError() {}
     func test_delete_hasNoSideEffectOnDeletionError() {}
     
