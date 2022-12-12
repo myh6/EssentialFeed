@@ -46,13 +46,14 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
         assertThatInsertDeliversNoErrorOnNonEmptyCache(on: sut)
     }
     
-    func test_retrieve_deliversFailureOnRetrievalError() {}
-    func test_retrieve_hasNoSideEffectsOnFailure() {}
-    
     func test_insert_overridesPreiouslyInsertedCacheValues() {
+        let sut = makeSUT()
         
+        assertThatInsertOverridesPreiouslyInsertedCacheValues(on: sut)
     }
     
+    func test_retrieve_deliversFailureOnRetrievalError() {}
+    func test_retrieve_hasNoSideEffectsOnFailure() {}
     func test_insert_deliversErrorOnInsertionError() {}
     func test_insert_hasNoSideEffectOnInsertionError() {}
     
