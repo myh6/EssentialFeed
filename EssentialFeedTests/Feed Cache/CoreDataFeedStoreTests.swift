@@ -35,6 +35,14 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     func test_retrieve_deliversFailureOnRetrievalError() {}
     func test_retrieve_hasNoSideEffectsOnFailure() {}
     
+    func test_insert_deliversNoErrorOnEmptyCache() {
+        
+    }
+    
+    func test_insert_deliversNoErrorOnNonEmptyCache() {
+        
+    }
+    
     func test_insert_overridesPreiouslyInsertedCacheValues() {
         
     }
