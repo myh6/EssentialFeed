@@ -31,6 +31,7 @@
 		0F9C776E29432D08000C280F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C776D29432D08000C280F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
 		0F9C777129433194000C280F /* CoreDataFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C777029433194000C280F /* CoreDataFeedStoreTests.swift */; };
 		0F9C777329433665000C280F /* CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C777229433665000C280F /* CoreDataFeedStore.swift */; };
+		0F9C77762946C98D000C280F /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C77742946C98D000C280F /* FeedStore.xcdatamodeld */; };
 		0FD18518293D9D5200278AE6 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD18517293D9D5200278AE6 /* XCTestCase+MemoryLeakTracking.swift */; };
 		0FF606EF29373EDC004E66F7 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0FF606EE29373EDC004E66F7 /* EssentialFeed.docc */; };
 		0FF606F529373EDD004E66F7 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF606EA29373EDC004E66F7 /* EssentialFeed.framework */; };
@@ -85,6 +86,7 @@
 		0F9C776D29432D08000C280F /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		0F9C777029433194000C280F /* CoreDataFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStoreTests.swift; sourceTree = "<group>"; };
 		0F9C777229433665000C280F /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
+		0F9C77752946C98D000C280F /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
 		0FD18517293D9D5200278AE6 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		0FF606EA29373EDC004E66F7 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF606ED29373EDC004E66F7 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				0F9C775E2941B1B2000C280F /* FeedCachePolicy.swift */,
 				0F9C77622941E287000C280F /* CodableFeedStore.swift */,
 				0F9C777229433665000C280F /* CoreDataFeedStore.swift */,
+				0F9C77742946C98D000C280F /* FeedStore.xcdatamodeld */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F2DDBBB29406DC80067457B /* LocalFeedImage.swift in Sources */,
+				0F9C77762946C98D000C280F /* FeedStore.xcdatamodeld in Sources */,
 				0F9C775F2941B1B2000C280F /* FeedCachePolicy.swift in Sources */,
 				0F2DDBB62940629D0067457B /* FeedStore.swift in Sources */,
 				0F30647F293DD136003571CA /* URLSessionHTTPClient.swift in Sources */,
@@ -760,6 +764,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0F9C77742946C98D000C280F /* FeedStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0F9C77752946C98D000C280F /* FeedStore.xcdatamodel */,
+			);
+			currentVersion = 0F9C77752946C98D000C280F /* FeedStore.xcdatamodel */;
+			path = FeedStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0FF606E129373EDC004E66F7 /* Project object */;
 }
