@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-
+// Remove CodableFeedStore because CoreDataFeedStore is more comprehensive and we only need one to test the behaviour
 public final class CoreDataFeedStore: FeedStore {
     
     private let container: NSPersistentContainer
