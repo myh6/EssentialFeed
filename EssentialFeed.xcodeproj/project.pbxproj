@@ -34,7 +34,7 @@
 		0F9C778029471A54000C280F /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C777F29471A54000C280F /* ManagedFeedImage.swift */; };
 		0F9C778229471A8A000C280F /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C778129471A8A000C280F /* ManagedCache.swift */; };
 		0F9C778A294720DD000C280F /* EssentialFeedCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C7789294720DD000C280F /* EssentialFeedCacheIntegrationTests.swift */; };
-		0F9C778B294720DD000C280F /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF606EA29373EDC004E66F7 /* EssentialFeed.framework */; };
+		0F9C778B294720DD000C280F /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF606EA29373EDC004E66F7 /* EssentialFeed.framework */; platformFilters = (ios, macos, ); };
 		0F9C77912947238E000C280F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD18517293D9D5200278AE6 /* XCTestCase+MemoryLeakTracking.swift */; };
 		0F9C779229472671000C280F /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C775A29409175000C280F /* FeedCacheTestHelpers.swift */; };
 		0F9C779329472689000C280F /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C775C29409217000C280F /* SharedTestHelpers.swift */; };
@@ -556,6 +556,10 @@
 		};
 		0F9C778D294720DD000C280F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+				macos,
+			);
 			target = 0FF606E929373EDC004E66F7 /* EssentialFeed */;
 			targetProxy = 0F9C778C294720DD000C280F /* PBXContainerItemProxy */;
 		};
@@ -622,8 +626,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minyanghuang.EssentialFeedCacheIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -640,8 +648,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minyanghuang.EssentialFeedCacheIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
