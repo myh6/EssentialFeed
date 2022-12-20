@@ -220,7 +220,6 @@
 				0F294D7D2951969C009742A2 /* Feed UI */,
 				0F294D51294973DF009742A2 /* EssentialFeediOS.docc */,
 				0F294D7A2951962D009742A2 /* Feed Image Loader */,
-				0F294D722949C293009742A2 /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -269,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				0F294D702949AB85009742A2 /* FeedImageCell.swift */,
+				0F294D722949C293009742A2 /* UIView+Shimmering.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
