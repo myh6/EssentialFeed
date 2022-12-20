@@ -12,3 +12,7 @@ public protocol FeedImageDataLoader {
     
     func loadImageData(from url: URL, completion: @escaping (Result) -> Void) -> FeedImageDataLoaderTask
 }
+
+public protocol FeedImageDataLoaderTask {
+    func cancel()
+}
