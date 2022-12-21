@@ -19,7 +19,6 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         self.refreshController = refreshController
     }
     
-    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
