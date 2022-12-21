@@ -12,6 +12,7 @@ final class FeedImageCellViewModel {
     private var task: FeedImageDataLoaderTask?
     private let model: FeedImage
     private var imageLoader: FeedImageDataLoader
+    typealias Observer<T> = (T) -> Void
     
     init(model: FeedImage, imageLoader: FeedImageDataLoader) {
         self.model = model
@@ -30,9 +31,9 @@ final class FeedImageCellViewModel {
         return location != nil
     }
     
-    var onImageLoad: ((UIImage) -> Void)?
-    var onShouldRetryImageLoadStateChange: ((Bool) -> Void)?
-    var onImageLoadingStateChange: ((Bool) -> Void)?
+    var onImageLoad: Observer<UIImage>?
+    var onShouldRetryImageLoadStateChange: Observer<Bool>?
+    var onImageLoadingStateChange: Observer<Bool>?
     
     func loadImageData() {
         onImageLoadingStateChange?(true)
