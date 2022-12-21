@@ -276,8 +276,8 @@
 		0F294D7D2951969C009742A2 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				0F294D9C2952BC2A009742A2 /* Models */,
 				0F294D872952AAB0009742A2 /* Composers */,
+				0F294D9C2952BC2A009742A2 /* Models */,
 				0F294D80295196DC009742A2 /* Views */,
 				0F294D7E295196A4009742A2 /* Controllers */,
 			);
