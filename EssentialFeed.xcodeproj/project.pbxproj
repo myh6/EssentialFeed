@@ -251,9 +251,10 @@
 		0F294D4F294973DF009742A2 /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				0F294D7A2951962D009742A2 /* Feed Image Loader */,
+				0F294D9C2952BC2A009742A2 /* Feed Presentation */,
 				0F294D7D2951969C009742A2 /* Feed UI */,
 				0F294D51294973DF009742A2 /* EssentialFeediOS.docc */,
-				0F294D7A2951962D009742A2 /* Feed Image Loader */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -285,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				0F294D872952AAB0009742A2 /* Composers */,
-				0F294D9C2952BC2A009742A2 /* Feed Presentation */,
 				0F294D80295196DC009742A2 /* Views */,
 				0F294D7E295196A4009742A2 /* Controllers */,
 			);
