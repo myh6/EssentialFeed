@@ -438,13 +438,13 @@
 			children = (
 				0F294DDE2966D13A009742A2 /* FeedPresenter.swift */,
 				0F294DE12966D278009742A2 /* Localized.swift */,
-				0F294DDB2966CFB6009742A2 /* Feed.strings */,
 				0F294DE32966D2A0009742A2 /* FeedViewModel.swift */,
 				0F294DE52966D2C3009742A2 /* FeedLoadingViewModel.swift */,
 				0F294DE72966D2ED009742A2 /* FeedView.swift */,
 				0F294DE92966D30C009742A2 /* FeedErrorViewModel.swift */,
 				0F294DEB2966D32B009742A2 /* FeedLoadingView.swift */,
 				0F294DED2966D356009742A2 /* FeedErrorView.swift */,
+				0F294DDB2966CFB6009742A2 /* Feed.strings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
