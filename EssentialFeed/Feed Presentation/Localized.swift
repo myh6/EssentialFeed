@@ -5,8 +5,6 @@
 //  Created by Min-Yang Huang on 2023/1/5.
 //
 
-import Foundation
-
 final class Localized {
     static var bundle: Bundle {
         Bundle(for: Localized.self)

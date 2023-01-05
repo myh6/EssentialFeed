@@ -5,12 +5,6 @@
 //  Created by Min-Yang Huang on 2023/1/5.
 //
 
-import Foundation
-
-public protocol FeedErrorView {
-    func display(_ viewModel: FeedErrorViewModel)
-}
-
 public final class FeedPresenter {
     private let feedView: FeedView
     private let loadingView: FeedLoadingView
