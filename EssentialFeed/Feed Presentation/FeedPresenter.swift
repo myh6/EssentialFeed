@@ -7,10 +7,6 @@
 
 import Foundation
 
-public protocol FeedLoadingView: AnyObject {
-    func display(_ viewModel: FeedLoadingViewModel)
-}
-
 public protocol FeedErrorView {
     func display(_ viewModel: FeedErrorViewModel)
 }
