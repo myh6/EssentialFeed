@@ -73,6 +73,10 @@ final class FeedPresenter {
     private let loadingView: FeedLoadingView
     private let errorView: FeedErrorView
     
+    static var title: String {
+        return Localized.Feed.title
+    }
+    
     init(feedView: FeedView, loadingView: FeedLoadingView, errorView: FeedErrorView) {
         self.errorView = errorView
         self.loadingView = loadingView
@@ -97,6 +101,11 @@ final class FeedPresenter {
 }
 
 class FeedPresenterTests: XCTestCase {
+    
+    
+    func test_title_isLocalized() {
+        XCTAssertEqual(FeedPresenter.title, localized("FEED_VIEW_TITLE"))
+    }
     
     func test_init_doesNotSendMessagesToView() {
         let (_, view) = makeSUT()
