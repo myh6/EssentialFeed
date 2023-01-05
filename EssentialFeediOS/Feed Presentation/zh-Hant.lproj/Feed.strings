@@ -1,9 +1,0 @@
-/* 
-  Feed.strings
-  EssentialFeed
-
-  Created by Min-Yang Huang on 2022/12/27.
-  
-*/
-"FEED_VIEW_TITLE" = "我的 Feed";
-"FEED_VIEW_CONNECTION_ERROR" = "無法連線";
