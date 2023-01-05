@@ -5,6 +5,18 @@
 //  Created by Min-Yang Huang on 2023/1/5.
 //
 
+public protocol FeedView {
+    func display(_ viewModel: FeedViewModel)
+}
+
+public protocol FeedLoadingView: AnyObject {
+    func display(_ viewModel: FeedLoadingViewModel)
+}
+
+public protocol FeedErrorView {
+    func display(_ viewModel: FeedErrorViewModel)
+}
+
 public final class FeedPresenter {
     private let feedView: FeedView
     private let loadingView: FeedLoadingView
