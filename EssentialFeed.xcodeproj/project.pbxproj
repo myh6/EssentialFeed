@@ -101,6 +101,7 @@
 			remoteGlobalIDString = 0F294D4D294973DF009742A2;
 			remoteInfo = EssentialFeediOS;
 		};
+
 		0F294D6A29499882009742A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FF606E129373EDC004E66F7 /* Project object */;
@@ -297,6 +298,7 @@
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
+
 		0F294D6729499882009742A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -726,6 +728,7 @@
 					};
 					0F294D56294973DF009742A2 = {
 						CreatedOnToolsVersion = 14.1;
+
 						LastSwiftMigration = 1410;
 					};
 					0F306483293DD957003571CA = {
