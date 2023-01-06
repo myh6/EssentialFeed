@@ -77,7 +77,7 @@ final class FeedImagePresenterTests: XCTestCase {
         XCTAssertNil(message?.image)
     }
     
-    func test_didFinishLoadingImageData_displayRetryOnFailImageTransformation() {
+    func test_didFinishLoadingImageData_displaysRetryOnFailImageTransformation() {
         let (sut, view) = makeSUT(imageTransformer: fail)
         let image = uniqueImage()
         let data = Data()
