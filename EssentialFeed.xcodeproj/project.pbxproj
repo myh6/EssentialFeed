@@ -84,7 +84,7 @@
 		0FF606EF29373EDC004E66F7 /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0FF606EE29373EDC004E66F7 /* EssentialFeed.docc */; };
 		0FF606F529373EDD004E66F7 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF606EA29373EDC004E66F7 /* EssentialFeed.framework */; };
 		0FF606FB29373EDD004E66F7 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF606ED29373EDC004E66F7 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FF6070529373EFA004E66F7 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6070429373EFA004E66F7 /* FeedItem.swift */; };
+		0FF6070529373EFA004E66F7 /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6070429373EFA004E66F7 /* FeedImage.swift */; };
 		0FF60707293740E9004E66F7 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF60706293740E9004E66F7 /* FeedLoader.swift */; };
 		0FF6070A29374C50004E66F7 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6070929374C50004E66F7 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		0FF6070D29383C8B004E66F7 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6070C29383C8B004E66F7 /* RemoteFeedLoader.swift */; };
@@ -101,7 +101,6 @@
 			remoteGlobalIDString = 0F294D4D294973DF009742A2;
 			remoteInfo = EssentialFeediOS;
 		};
-
 		0F294D6A29499882009742A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FF606E129373EDC004E66F7 /* Project object */;
@@ -220,7 +219,7 @@
 		0FF606ED29373EDC004E66F7 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		0FF606EE29373EDC004E66F7 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
 		0FF606F429373EDD004E66F7 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FF6070429373EFA004E66F7 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		0FF6070429373EFA004E66F7 /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
 		0FF60706293740E9004E66F7 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		0FF6070929374C50004E66F7 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		0FF6070C29383C8B004E66F7 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
@@ -298,7 +297,6 @@
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
-
 		0F294D6729499882009742A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,7 +553,7 @@
 		0FF607082937419D004E66F7 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
-				0FF6070429373EFA004E66F7 /* FeedItem.swift */,
+				0FF6070429373EFA004E66F7 /* FeedImage.swift */,
 				0FF60706293740E9004E66F7 /* FeedLoader.swift */,
 			);
 			path = "Feed Feature";
@@ -728,7 +726,6 @@
 					};
 					0F294D56294973DF009742A2 = {
 						CreatedOnToolsVersion = 14.1;
-
 						LastSwiftMigration = 1410;
 					};
 					0F306483293DD957003571CA = {
@@ -902,7 +899,7 @@
 				0FF60707293740E9004E66F7 /* FeedLoader.swift in Sources */,
 				0FF607112938AA3E004E66F7 /* FeedItemsMapper.swift in Sources */,
 				0F2DDBB929406D860067457B /* RemoteFeedItem.swift in Sources */,
-				0FF6070529373EFA004E66F7 /* FeedItem.swift in Sources */,
+				0FF6070529373EFA004E66F7 /* FeedImage.swift in Sources */,
 				0F2DDBB32940620C0067457B /* LocalFeedLoader.swift in Sources */,
 				0FF606EF29373EDC004E66F7 /* EssentialFeed.docc in Sources */,
 				0F9C778029471A54000C280F /* ManagedFeedImage.swift in Sources */,
