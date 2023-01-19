@@ -6,8 +6,6 @@
 //
 
 import XCTest
-import EssentialFeed
-import EssentialApp
 
 final class EssentialAppUIAcceptanceTests: XCTestCase {
 
