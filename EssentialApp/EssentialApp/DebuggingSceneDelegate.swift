@@ -57,14 +57,14 @@ private class DebuggingHTTPClient: HTTPClient {
     private func makeData(for url: URL) -> Data {
         switch url.absoluteString {
         case "http://image.com":
-            return makeImageData(for: url)
+            return makeImageData()
             
         default:
             return makeFeedData()
         }
     }
     
-    private func makeImageData(for url: URL) -> Data {
+    private func makeImageData() -> Data {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()!
