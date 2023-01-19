@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F1FE4882978DABF00E0FDF4 /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE4872978DABF00E0FDF4 /* DebuggingSceneDelegate.swift */; };
 		0F1FE48A2978E16500E0FDF4 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE4892978E16500E0FDF4 /* SceneDelegateTests.swift */; };
 		0F1FE4912978E47A00E0FDF4 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE48E2978E47A00E0FDF4 /* MainQueueDispatchDecorator.swift */; };
 		0F1FE4922978E47A00E0FDF4 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE48C2978E47A00E0FDF4 /* FeedLoaderPresentationAdapter.swift */; };
@@ -78,7 +77,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F1FE4872978DABF00E0FDF4 /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		0F1FE4892978E16500E0FDF4 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 		0F1FE48B2978E47A00E0FDF4 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		0F1FE48C2978E47A00E0FDF4 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 			children = (
 				0F294E4B29744751009742A2 /* AppDelegate.swift */,
 				0F294E4D29744751009742A2 /* SceneDelegate.swift */,
-				0F1FE4872978DABF00E0FDF4 /* DebuggingSceneDelegate.swift */,
 				0F294E4F29744751009742A2 /* ViewController.swift */,
 				0F294E5129744751009742A2 /* Main.storyboard */,
 				0F294E5429744752009742A2 /* Assets.xcassets */,
@@ -344,7 +341,6 @@
 				0F294E752974EF01009742A2 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				0F4A75942976879A00361D83 /* FeedLoaderCacheDecorator.swift in Sources */,
 				0F1FE4932978E47A00E0FDF4 /* FeedViewAdapter.swift in Sources */,
-				0F1FE4882978DABF00E0FDF4 /* DebuggingSceneDelegate.swift in Sources */,
 				0F1FE4922978E47A00E0FDF4 /* FeedLoaderPresentationAdapter.swift in Sources */,
 				0F294E4E29744751009742A2 /* SceneDelegate.swift in Sources */,
 				0F294E7929763879009742A2 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
