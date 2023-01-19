@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1FE4882978DABF00E0FDF4 /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE4872978DABF00E0FDF4 /* DebuggingSceneDelegate.swift */; };
 		0F294E4C29744751009742A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F294E4B29744751009742A2 /* AppDelegate.swift */; };
 		0F294E4E29744751009742A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F294E4D29744751009742A2 /* SceneDelegate.swift */; };
 		0F294E5029744751009742A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F294E4F29744751009742A2 /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F1FE4872978DABF00E0FDF4 /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		0F294E4829744751009742A2 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F294E4B29744751009742A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F294E4D29744751009742A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				0F294E4B29744751009742A2 /* AppDelegate.swift */,
 				0F294E4D29744751009742A2 /* SceneDelegate.swift */,
+				0F1FE4872978DABF00E0FDF4 /* DebuggingSceneDelegate.swift */,
 				0F294E4F29744751009742A2 /* ViewController.swift */,
 				0F294E5129744751009742A2 /* Main.storyboard */,
 				0F294E5429744752009742A2 /* Assets.xcassets */,
@@ -340,6 +343,7 @@
 				0F294E4C29744751009742A2 /* AppDelegate.swift in Sources */,
 				0F294E752974EF01009742A2 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				0F4A75942976879A00361D83 /* FeedLoaderCacheDecorator.swift in Sources */,
+				0F1FE4882978DABF00E0FDF4 /* DebuggingSceneDelegate.swift in Sources */,
 				0F294E4E29744751009742A2 /* SceneDelegate.swift in Sources */,
 				0F294E7929763879009742A2 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 				0FBD11932976A9060081C0E1 /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
