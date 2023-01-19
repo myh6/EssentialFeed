@@ -218,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				0F294E7A297638F4009742A2 /* Helpers */,
+				0F1FE4A92978E6FF00E0FDF4 /* FeedUIIntegrationTests.swift */,
 				0F294E6D2974E37E009742A2 /* FeedLoaderWithFallbackCompositeTests.swift */,
 				0F294E762974F3F8009742A2 /* FeedImageLoaderWithFallbackCompositeTests.swift */,
 				0F4A758B29767E5100361D83 /* FeedLoaderCacheDecoratorTests.swift */,
@@ -242,7 +243,6 @@
 				0F1FE49D2978E4BF00E0FDF4 /* UIButton+TestHelpers.swift */,
 				0F1FE49A2978E4BF00E0FDF4 /* FeedImageCell+TestHelpers.swift */,
 				0F1FE4982978E4BF00E0FDF4 /* FeedViewController+TestHelpers.swift */,
-				0F1FE4A92978E6FF00E0FDF4 /* FeedUIIntegrationTests.swift */,
 				0F1FE49F2978E4BF00E0FDF4 /* FeedUIIntegrationTests+LoaderSpy.swift */,
 				0F1FE4992978E4BF00E0FDF4 /* FeedUIIntegrationTests+Assertion.swift */,
 				0F1FE49C2978E4BF00E0FDF4 /* FeedUIIntegrationTests+Localization.swift */,
