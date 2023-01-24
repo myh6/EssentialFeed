@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F1FE4B429802E8500E0FDF4 /* FeedSnapShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE4B329802E8500E0FDF4 /* FeedSnapShotTests.swift */; };
+		0F1FE4B7298035D800E0FDF4 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FE4B6298035D800E0FDF4 /* UIImage+TestHelpers.swift */; };
 		0F294D52294973DF009742A2 /* EssentialFeediOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0F294D51294973DF009742A2 /* EssentialFeediOS.docc */; };
 		0F294D58294973DF009742A2 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F294D4E294973DF009742A2 /* EssentialFeediOS.framework */; };
 		0F294D6829499882009742A2 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF606EA29373EDC004E66F7 /* EssentialFeed.framework */; };
@@ -147,6 +148,7 @@
 
 /* Begin PBXFileReference section */
 		0F1FE4B329802E8500E0FDF4 /* FeedSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSnapShotTests.swift; sourceTree = "<group>"; };
+		0F1FE4B6298035D800E0FDF4 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+TestHelpers.swift"; path = "EssentialApp/EssentialAppTests/Helpers/UIImage+TestHelpers.swift"; sourceTree = SOURCE_ROOT; };
 		0F294D4E294973DF009742A2 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F294D51294973DF009742A2 /* EssentialFeediOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeediOS.docc; sourceTree = "<group>"; };
 		0F294D57294973DF009742A2 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,6 +282,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F1FE4B5298035B800E0FDF4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F1FE4B6298035D800E0FDF4 /* UIImage+TestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0F294D4F294973DF009742A2 /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +302,7 @@
 		0F294D5B294973DF009742A2 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				0F1FE4B5298035B800E0FDF4 /* Helpers */,
 				0F1FE4B329802E8500E0FDF4 /* FeedSnapShotTests.swift */,
 			);
 			path = EssentialFeediOSTests;
@@ -813,6 +824,7 @@
 			files = (
 				0F294D6D294999AC009742A2 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				0F1FE4B429802E8500E0FDF4 /* FeedSnapShotTests.swift in Sources */,
+				0F1FE4B7298035D800E0FDF4 /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
