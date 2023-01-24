@@ -30,6 +30,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        errorView.button.titleLabel?.numberOfLines = 0
         tableView.sizeTableHeaderToFit()
     }
     
