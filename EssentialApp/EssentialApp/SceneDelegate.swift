@@ -35,8 +35,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.store = store
     }
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
         
+        window = UIWindow(windowScene: scene)
         configureWindow()
     }
     
@@ -60,8 +61,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     primary: localImageLoader,
                     fallback: FeedImageDataLoaderCacheDecorator(
                         decoratee: remoteImageLoader,
-                        cache: localImageLoader)))
-         )
+                        cache: localImageLoader))))
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
