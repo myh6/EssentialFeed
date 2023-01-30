@@ -102,3 +102,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 }
+
+extension RemoteLoader: FeedLoader where Resource == [FeedImage] {}
