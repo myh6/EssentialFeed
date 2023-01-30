@@ -492,6 +492,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0F8A8C952987BFD80083341D /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				0F8A8C882987662C0083341D /* RemoteImageCommentsLoader.swift */,
+				0F8A8C8A298766C00083341D /* ImageCommentsMapper.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		0F8A8C962987C0160083341D /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				0F8A8C86298765140083341D /* LoadImageCommentFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
 		0F9C775529407513000C280F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +606,7 @@
 				0F2DDBB1294061FF0067457B /* Feed Cache */,
 				0FF607082937419D004E66F7 /* Feed Feature */,
 				0F8A8C8C298777CA0083341D /* Image Comments Feature */,
+				0F8A8C952987BFD80083341D /* Image Comments API */,
 				0FF6070B29383C7F004E66F7 /* Feed API */,
 				0FF606ED29373EDC004E66F7 /* EssentialFeed.h */,
 				0FF606EE29373EDC004E66F7 /* EssentialFeed.docc */,
@@ -605,6 +623,7 @@
 				0F294DCD295D85D2009742A2 /* Feed Presentation */,
 				0F2DDBAE29402A1E0067457B /* Feed Cache */,
 				0FF607122938B0B6004E66F7 /* Feed API */,
+				0F8A8C962987C0160083341D /* Image Comments API */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -628,8 +647,6 @@
 				0FF6070C29383C8B004E66F7 /* RemoteFeedLoader.swift */,
 				0FF607102938AA3E004E66F7 /* FeedItemsMapper.swift */,
 				0F2DDBB829406D860067457B /* RemoteFeedItem.swift */,
-				0F8A8C882987662C0083341D /* RemoteImageCommentsLoader.swift */,
-				0F8A8C8A298766C00083341D /* ImageCommentsMapper.swift */,
 				0F294DFE296D4AE9009742A2 /* RemoteFeedImageDataLoader.swift */,
 			);
 			path = "Feed API";
@@ -640,7 +657,6 @@
 			children = (
 				0FF6070929374C50004E66F7 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				0F294DFA296D0F4D009742A2 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				0F8A8C86298765140083341D /* LoadImageCommentFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
