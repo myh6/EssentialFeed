@@ -146,11 +146,6 @@ final class LoadImageCommentFromRemoteUseCaseTests: XCTestCase {
             ]
         ]
         
-        // Below is old method. compactMap came out in Swift 5.
-//            .reduce(into: [String: Any]()) { accumulate, element in
-//            if let value = element.value { accumulate[element.key] = value }
-//        }
-        
         return (item, json)
     }
     
