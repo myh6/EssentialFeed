@@ -75,7 +75,7 @@ extension Publisher {
 extension DispatchQueue {
     
     static var immediateWhenOnMainQueueScheduler: ImmediateWhenOnMainQueueScheduler {
-        ImmediateWhenOnMainQueueScheduler()
+        ImmediateWhenOnMainQueueScheduler.shared
     }
     
     struct ImmediateWhenOnMainQueueScheduler: Scheduler {
@@ -90,8 +90,24 @@ extension DispatchQueue {
             DispatchQueue.main.minimumTolerance
         }
         
+        static let shared = Self()
+        
+        private static let key = DispatchSpecificKey<UInt8>()
+        private static let value = UInt8.max
+        
+        private init() {
+            DispatchQueue.main.setSpecific(key: Self.key, value: Self.value)
+        }
+        
+        private func isMainQueue() -> Bool {
+            return DispatchQueue.getSpecific(key: Self.key) == Self.value
+        }
+        
         func schedule(options: DispatchQueue.SchedulerOptions?, _ action: @escaping () -> Void) {
-            guard Thread.isMainThread else {
+            // main queue is on main thread
+            // But main thread don't guarantee work is on main queue
+            // which could be fine in most cases but some exception but expect work on main queue only (ex: MapKit)
+            guard isMainQueue() else {
                 return DispatchQueue.main.schedule(options: options, action)
             }
             action()
