@@ -12,10 +12,6 @@ public final class LoadResourcePresenter {
     private let loadingView: FeedLoadingView
     private let errorView: FeedErrorView
     
-    public static var title: String {
-        return Localized.Feed.title
-    }
-    
     public init(feedView: FeedView, loadingView: FeedLoadingView, errorView: FeedErrorView) {
         self.errorView = errorView
         self.loadingView = loadingView
