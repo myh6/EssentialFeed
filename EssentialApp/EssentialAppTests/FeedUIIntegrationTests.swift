@@ -311,7 +311,7 @@ final class FeedUIIntegrationTests: XCTestCase {
         XCTAssertEqual(sut.errorMessage, nil)
     }
 
-    func test_errorView_dismissesErrorMessageOnTap() {
+    func test_tapOnErrorView_dismissesErrorMessage() {
         let (sut, loader) = makeSUT()
 
         sut.loadViewIfNeeded()
