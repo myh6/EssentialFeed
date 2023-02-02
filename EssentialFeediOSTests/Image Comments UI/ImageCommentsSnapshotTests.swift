@@ -18,6 +18,8 @@ class ImageCommentsSnapshotTests: XCTestCase {
         
         assert(snapshot: sut.snapshot(for: .iPhone13(style: .light)), named: "IMAGE_COMMENTS_light")
         assert(snapshot: sut.snapshot(for: .iPhone13(style: .dark)), named: "IMAGE_COMMENTS_dark")
+        assert(snapshot: sut.snapshot(for: .iPhone13(style: .light, contentSize: .extraLarge)), named: "IMAGE_COMMENTS_light_ExtraLarge")
+        assert(snapshot: sut.snapshot(for: .iPhone13(style: .dark, contentSize: .extraLarge)), named: "IMAGE_COMMENTS_dark_ExtraLarge")
     }
     
     //MARK: - Helpers
