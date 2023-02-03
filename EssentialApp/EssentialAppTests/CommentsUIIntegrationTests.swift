@@ -11,7 +11,8 @@ import EssentialFeed
 import EssentialFeediOS
 import EssentialApp
 import Combine
-final class CommentsUIIntegrationTests: FeedUIIntegrationTests {
+
+final class CommentsUIIntegrationTests: XCTestCase {
     
     func test_commentsView_hasTitle() {
         let (sut, _) = makeSUT()
@@ -21,7 +22,7 @@ final class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         XCTAssertEqual(sut.title, commentsTitle)
     }
     
-    func test_loadCommentsActions_requestFeedFromLoader() {
+    func test_loadCommentsActions_requestCommetsFromLoader() {
         let (sut, loader) = makeSUT()
         XCTAssertEqual(loader.loadCommentsCount, 0, "Expected no loading requests before view is loaded")
         
@@ -105,7 +106,7 @@ final class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         wait(for: [exp], timeout: 1.0)
     }
     
-    override func test_loadFeedCompletion_rendersErrorMessageOnErrorUntilNextReload() {
+    func test_loadCommentsCompletion_rendersErrorMessageOnErrorUntilNextReload() {
         let (sut, loader) = makeSUT()
 
         sut.loadViewIfNeeded()
@@ -118,7 +119,7 @@ final class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         XCTAssertEqual(sut.errorMessage, nil)
     }
 
-    override func test_tapOnErrorView_dismissesErrorMessage() {
+    func test_tapOnErrorView_dismissesErrorMessage() {
         let (sut, loader) = makeSUT()
 
         sut.loadViewIfNeeded()
@@ -159,8 +160,6 @@ final class CommentsUIIntegrationTests: FeedUIIntegrationTests {
     }
     
     private class LoaderSpy {
-        
-        //MARK: - FeedLoader
         
         private var requests = [PassthroughSubject<[ImageComment], Error>]()
         
