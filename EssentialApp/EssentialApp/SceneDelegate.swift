@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }()
     
     private lazy var baseURL = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed")!
-    private lazy var remoteURL = baseURL.appending(path: "/v1/feed")
+    private lazy var remoteURL = FeedEndpoint.get.url(baseURL: baseURL)
     private lazy var remoteFeedLoader = httpClient.getPublisher(url: remoteURL).tryMap(FeedItemsMapper.map)
     
     private lazy var navigationController = UINavigationController(
@@ -59,7 +59,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func showComments(for image: FeedImage) {
-        let url = baseURL.appendingPathComponent("/v1/image/\(image.id)/comments")
+        let url = ImageCommentsEndpoint.get(image.id).url(baseURL: baseURL)
         let comments = CommentsUIComposer.commentsComposedWith(commentsLoader: makeRemoteCommentsLoader(url: url))
         navigationController.pushViewController(comments, animated: true)
     }
