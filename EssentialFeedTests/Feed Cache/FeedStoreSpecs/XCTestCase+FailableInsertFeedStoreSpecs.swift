@@ -9,7 +9,7 @@ import XCTest
 import EssentialFeed
 
 extension FailableInsertFeedStoreSpecs where Self: XCTestCase {
-    func assertThatInsertDeliversErrorOnInsertionError(on sut: FeedStore, file: StaticString = #file, line: UInt = #line) {
+    func assertThatInsertDeliversErrorOnInsertionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
         let feed = uniqueImageFeed().local
         let timestamp = Date()
         
@@ -18,7 +18,7 @@ extension FailableInsertFeedStoreSpecs where Self: XCTestCase {
         XCTAssertNotNil(insertionError, "Expected cache insertion to fail with an error", file: file, line: line)
     }
     
-    func assertThatInsertHasNoSideEffectOnInsertionError(on sut: FeedStore, file: StaticString = #file, line: UInt = #line) {
+    func assertThatInsertHasNoSideEffectOnInsertionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
         let feed = uniqueImageFeed().local
         let timestamp = Date()
         

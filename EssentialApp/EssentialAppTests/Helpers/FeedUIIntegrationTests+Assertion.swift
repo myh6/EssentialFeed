@@ -11,7 +11,7 @@ import XCTest
 
 extension FeedUIIntegrationTests {
     
-    func assertThat(_ sut: ListViewController, isRendering feed: [FeedImage], file: StaticString = #file, line: UInt = #line) {
+    func assertThat(_ sut: ListViewController, isRendering feed: [FeedImage], file: StaticString = #filePath, line: UInt = #line) {
         sut.view.enforceLayoutCycle()
         guard sut.numberOfRenderedFeedImageViews() == feed.count else {
             return XCTFail("Expected \(feed.count) images, got \(sut.numberOfRenderedFeedImageViews()) instead", file: file, line: line)
@@ -22,7 +22,7 @@ extension FeedUIIntegrationTests {
         }
     }
     
-    func assertThat(_ sut: ListViewController, hasViewConfiguredFor image: FeedImage, at row: Int, file: StaticString = #file, line: UInt = #line) {
+    func assertThat(_ sut: ListViewController, hasViewConfiguredFor image: FeedImage, at row: Int, file: StaticString = #filePath, line: UInt = #line) {
         let view = sut.feedImageView(at: row)
         
         guard let cell = view as? FeedImageCell else {
