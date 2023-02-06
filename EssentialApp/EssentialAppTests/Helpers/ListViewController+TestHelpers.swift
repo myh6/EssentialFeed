@@ -130,6 +130,10 @@ extension ListViewController {
         cell(row: 0, section: feedLoadMoreSection) as? LoadMoreCell
     }
     
+    var loadMoreFeedErrorMessage: String? {
+        return loadMoreFeedCell()?.message
+    }
+    
     private var feedImagesSection: Int { 0 }
     private var feedLoadMoreSection: Int { 1 }
 }
