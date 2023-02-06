@@ -9,13 +9,6 @@ import UIKit
 import EssentialFeediOS
 
 extension ListViewController {
-    func simulateUserInitiatedReload() {
-        refreshControl?.simulatePullToRefresh()
-    }
-    
-    func simulateTapOnErrorMessage() {
-        errorView.simulateTap()
-    }
     
     var errorMessage: String? {
         return errorView.message
@@ -37,6 +30,14 @@ extension ListViewController {
         let ds = tableView.dataSource
         let index = IndexPath(row: row, section: section)
         return ds?.tableView(tableView, cellForRowAt: index)
+    }
+    
+    func simulateUserInitiatedReload() {
+        refreshControl?.simulatePullToRefresh()
+    }
+    
+    func simulateTapOnErrorMessage() {
+        errorView.simulateTap()
     }
 }
 
@@ -104,6 +105,14 @@ extension ListViewController {
         ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
     }
     
+    func simulateLoadMoreFeedAction() {
+        guard let view = cell(row: 0, section: feedLoadMoreSection) as? LoadMoreCell else { return }
+        
+        let delegate = tableView.delegate
+        let index = IndexPath(row: 0, section: feedLoadMoreSection)
+        delegate?.tableView?(tableView, willDisplay: view, forRowAt: index)
+    }
+    
     func numberOfRenderedFeedImageViews() -> Int {
         numberOfRows(in: feedImagesSection)
     }
@@ -112,5 +121,10 @@ extension ListViewController {
         cell(row: row, section: feedImagesSection)
     }
     
+    private func loadMoreFeedCell() -> LoadMoreCell? {
+        cell(row: 0, section: feedLoadMoreSection) as? LoadMoreCell
+    }
+    
     private var feedImagesSection: Int { 0 }
+    private var feedLoadMoreSection: Int { 1 }
 }
