@@ -13,6 +13,8 @@ import EssentialApp
 
 class FeedUIIntegrationTests: XCTestCase {
     
+    //MARK: - Feed View
+    
     func test_feedView_hasTitle() {
         let (sut, _) = makeSUT()
         
@@ -198,6 +200,35 @@ class FeedUIIntegrationTests: XCTestCase {
         }
         wait(for: [exp], timeout: 1.0)
     }
+    
+    
+    func test_loadFeedCompletion_rendersErrorMessageOnErrorUntilNextReload() {
+        let (sut, loader) = makeSUT()
+
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.errorMessage, nil)
+
+        loader.completeFeedLoadingWithError(at: 0)
+        XCTAssertEqual(sut.errorMessage, loadError)
+
+        sut.simulateUserInitiatedReload()
+        XCTAssertEqual(sut.errorMessage, nil)
+    }
+
+    func test_tapOnErrorView_dismissesErrorMessage() {
+        let (sut, loader) = makeSUT()
+
+        sut.loadViewIfNeeded()
+        XCTAssertEqual(sut.errorMessage, nil)
+
+        loader.completeFeedLoadingWithError(at: 0)
+        XCTAssertEqual(sut.errorMessage, loadError)
+
+        sut.simulateTapOnErrorMessage()
+        XCTAssertEqual(sut.errorMessage, nil)
+    }
+    
+    //MARK: - Feed Image View
     
     func test_feedImageView_loadImageURLWhenVisible() {
         let image0 = makeImage(url: URL(string: "https://url-0.com")!)
@@ -387,32 +418,6 @@ class FeedUIIntegrationTests: XCTestCase {
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1.0)
-    }
-    
-    func test_loadFeedCompletion_rendersErrorMessageOnErrorUntilNextReload() {
-        let (sut, loader) = makeSUT()
-
-        sut.loadViewIfNeeded()
-        XCTAssertEqual(sut.errorMessage, nil)
-
-        loader.completeFeedLoadingWithError(at: 0)
-        XCTAssertEqual(sut.errorMessage, loadError)
-
-        sut.simulateUserInitiatedReload()
-        XCTAssertEqual(sut.errorMessage, nil)
-    }
-
-    func test_tapOnErrorView_dismissesErrorMessage() {
-        let (sut, loader) = makeSUT()
-
-        sut.loadViewIfNeeded()
-        XCTAssertEqual(sut.errorMessage, nil)
-
-        loader.completeFeedLoadingWithError(at: 0)
-        XCTAssertEqual(sut.errorMessage, loadError)
-
-        sut.simulateTapOnErrorMessage()
-        XCTAssertEqual(sut.errorMessage, nil)
     }
     
     //MARK: - Helpers
