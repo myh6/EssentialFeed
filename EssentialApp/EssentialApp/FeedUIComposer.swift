@@ -29,8 +29,8 @@ public final class FeedUIComposer {
                 controller: feedController,
                 imageLoader: { imageLoader($0).dispatchOnMainQueue() },
                 selection: selection),
-            loadingView: WeakRefVirtualProxy(object: feedController),
-            errorView: WeakRefVirtualProxy(object: feedController),
+            loadingView: WeakRefVirtualProxy(feedController),
+            errorView: WeakRefVirtualProxy(feedController),
             mapper: { $0 })
         return feedController
     }

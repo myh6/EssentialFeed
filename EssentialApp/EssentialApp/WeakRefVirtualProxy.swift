@@ -12,7 +12,7 @@ import EssentialFeediOS
 final class WeakRefVirtualProxy<T: AnyObject> {
     private weak var object: T?
     
-    init(object: T?) {
+    init(_ object: T?) {
         self.object = object
     }
 }
