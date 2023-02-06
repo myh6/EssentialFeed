@@ -106,11 +106,16 @@ extension ListViewController {
     }
     
     func simulateLoadMoreFeedAction() {
-        guard let view = cell(row: 0, section: feedLoadMoreSection) as? LoadMoreCell else { return }
+        guard let view = loadMoreFeedCell() else { return }
         
         let delegate = tableView.delegate
         let index = IndexPath(row: 0, section: feedLoadMoreSection)
         delegate?.tableView?(tableView, willDisplay: view, forRowAt: index)
+    }
+    
+    var isShowingLoadMoreFeedIndicator: Bool {
+        let view = loadMoreFeedCell()
+        return view?.isLoading == true
     }
     
     func numberOfRenderedFeedImageViews() -> Int {
