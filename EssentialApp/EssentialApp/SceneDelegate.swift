@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }()
     
     private lazy var baseURL = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed")!
-    private lazy var remoteURL = FeedEndpoint.get.url(baseURL: baseURL)
+    private lazy var remoteURL = FeedEndpoint.get().url(baseURL: baseURL)
     private lazy var remoteFeedLoader = httpClient.getPublisher(url: remoteURL).tryMap(FeedItemsMapper.map)
     
     private lazy var navigationController = UINavigationController(
