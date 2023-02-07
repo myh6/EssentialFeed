@@ -179,7 +179,7 @@ class FeedUIIntegrationTests: XCTestCase {
         let (sut, loader) = makeSUT()
         sut.loadViewIfNeeded()
         
-        let exp = expectation(description: "Wait for backgorund queue")
+        let exp = expectation(description: "Wait for background queue")
         DispatchQueue.global().async {
             loader.completeFeedLoading(at: 0)
             exp.fulfill()
@@ -193,7 +193,7 @@ class FeedUIIntegrationTests: XCTestCase {
         loader.completeFeedLoading(at: 0)
         sut.simulateLoadMoreFeedAction()
         
-        let exp = expectation(description: "Wait for backgorund queue")
+        let exp = expectation(description: "Wait for background queue")
         DispatchQueue.global().async {
             loader.completeLoadMore()
             exp.fulfill()
