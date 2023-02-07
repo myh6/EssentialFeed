@@ -41,6 +41,7 @@
 		0F4A758E2976809E00361D83 /* FeedLoaderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A758D2976809E00361D83 /* FeedLoaderStub.swift */; };
 		0F4A759829768B0400361D83 /* FeedImageLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A759729768B0400361D83 /* FeedImageLoaderSpy.swift */; };
 		0F8A8C852985367D0083341D /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A8C842985367D0083341D /* CombineHelpers.swift */; };
+		0FB9CADA2992004D00AAA276 /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9CAD92992004D00AAA276 /* NullStore.swift */; };
 		0FBD118F2976A13D0081C0E1 /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD118E2976A13D0081C0E1 /* XCTestCase+FeedImageDataLoader.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		0F4A758D2976809E00361D83 /* FeedLoaderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderStub.swift; sourceTree = "<group>"; };
 		0F4A759729768B0400361D83 /* FeedImageLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageLoaderSpy.swift; sourceTree = "<group>"; };
 		0F8A8C842985367D0083341D /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		0FB9CAD92992004D00AAA276 /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		0FBD118E2976A13D0081C0E1 /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				0F294E4B29744751009742A2 /* AppDelegate.swift */,
+				0FB9CAD92992004D00AAA276 /* NullStore.swift */,
 				0F294E4D29744751009742A2 /* SceneDelegate.swift */,
 				0F8A8C842985367D0083341D /* CombineHelpers.swift */,
 				0F294E5429744752009742A2 /* Assets.xcassets */,
@@ -313,6 +316,7 @@
 			files = (
 				0F1FE4942978E47A00E0FDF4 /* FeedUIComposer.swift in Sources */,
 				0F8A8C852985367D0083341D /* CombineHelpers.swift in Sources */,
+				0FB9CADA2992004D00AAA276 /* NullStore.swift in Sources */,
 				0F294E4C29744751009742A2 /* AppDelegate.swift in Sources */,
 				0F1FE4932978E47A00E0FDF4 /* FeedViewAdapter.swift in Sources */,
 				0F28D06D298CA46E006ECB61 /* CommentsUIComposer.swift in Sources */,
