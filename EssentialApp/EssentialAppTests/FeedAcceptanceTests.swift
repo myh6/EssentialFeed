@@ -61,7 +61,7 @@ class FeedAcceptanceTests: XCTestCase {
     func test_onEnteringBackground_deleteExpiredFeedCache() {
         let store = InMemoryFeedStore.withExpiredFeedCache
         
-        enterBackground(with: store)
+        try? enterBackground(with: store)
         
         XCTAssertNil(store.feedCache, "Expected to delete expired cache")
     }
@@ -69,7 +69,7 @@ class FeedAcceptanceTests: XCTestCase {
     func test_onEnteringBackground_keepsNonExpiredFeedCache() {
         let store = InMemoryFeedStore.withNonExpiredFeedCache
         
-        enterBackground(with: store)
+        try? enterBackground(with: store)
         
         XCTAssertNotNil(store.feedCache, "Expected to keep non-expired cache")
     }
@@ -94,9 +94,13 @@ class FeedAcceptanceTests: XCTestCase {
         return feed
     }
     
-    private func enterBackground(with store: InMemoryFeedStore) {
+    private func enterBackground(with store: InMemoryFeedStore) throws {
         let sut = SceneDelegate(httpClient: HTTPClientStub.offline, store: store, scheduler: .immediateOnMainQueue)
-        sut.sceneWillResignActive(UIApplication.shared.connectedScenes.first!)
+
+        let sceneClass = NSClassFromString("UIScene") as? NSObject.Type
+        let scene = try XCTUnwrap(sceneClass?.init() as? UIScene)
+
+        sut.sceneWillResignActive(scene)
     }
     
     private func showCommentsForFirstImage() -> ListViewController {
