@@ -32,7 +32,7 @@ public protocol FeedStore {
     func retrieve(completion: @escaping RetrievalCompletion)
 }
 
-extension FeedStore {
+public extension FeedStore {
     
     func deleteCacheFeed() throws {
         let group = DispatchGroup()
